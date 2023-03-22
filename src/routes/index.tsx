@@ -6,6 +6,7 @@ const Routes = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
+        {/* <Route/> */}
       </Switch>
     </Router>
   );

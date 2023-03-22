@@ -11,7 +11,20 @@ export default createGlobalStyle`
         font-size: 100%;
     }
 :root{
-    //--
+    --default: #f8f8f8;
+    --decor: #ffc900;
+
+    --gray0: #f3f3f3;
+    --gray1: #6f5b61;
+    --gray2: #222222;
+    --gray3: #e9e9e9;
+
+    --title: 'Montserrat', sans-serif;
+    --content: 'Merriweather', serif;
+
+}
+body{
+    background-color: var(--default);
 }
 a{
     text-decoration: none;

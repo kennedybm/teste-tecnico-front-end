@@ -29,4 +29,5 @@ export interface IContext {
   commentsData: IComments[];
   setCommentsData: React.Dispatch<React.SetStateAction<IComments[]>>;
   fetchPosts: () => Promise<void>;
+  fetchComments: (id: number) => Promise<void>;
 }

@@ -20,9 +20,22 @@ export const PostsProvider = ({
 
   const fetchPosts = async (): Promise<void> => {
     await postsURL
-      .get<Interfaces.IPosts>("")
+      .get<Interfaces.IPosts[]>("")
       .then((res) => {
-        console.log(res);
+        setPostsData(res.data);
+      })
+      .catch((err) => {
+        const currentError =
+          err as AxiosError<Interfaces.IDefaultErrorResponse>;
+        console.log(currentError);
+      });
+  };
+
+  const fetchComments = async (id: number): Promise<void> => {
+    await postsURL
+      .get<Interfaces.IComments[]>(`/${id}/comments`)
+      .then((res) => {
+        setCommentsData(res.data);
       })
       .catch((err) => {
         const currentError =
@@ -39,6 +52,7 @@ export const PostsProvider = ({
         commentsData,
         setCommentsData,
         fetchPosts,
+        fetchComments,
       }}
     >
       {children}

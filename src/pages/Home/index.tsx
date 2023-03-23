@@ -1,39 +1,81 @@
 import * as S from "./styles";
 import { usePosts } from "../../providers/Api/Posts";
 import { useUsers } from "../../providers/Api/Users";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { Header } from "../../components";
 
 const Home = () => {
-  const [postId, setPostId] = useState<number | undefined>();
   const { fetchPosts, fetchComments, postsData, commentsData } = usePosts();
-
   const { usersData, setUsersData, fetchUsers } = useUsers();
 
+  const [position, setPosition] = useState<boolean>(false);
+
+  const [postId, setPostId] = useState<number | undefined>();
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    console.log(scrollPosition);
+    if (scrollPosition >= 240) {
+      setPosition(!position);
+    } else if (scrollPosition < 240) {
+      setPosition(false);
+    }
+  };
+
   useEffect(() => {
-    fetchUsers();
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
-  // console.log(postsData);
-
-  const dataTest = [
-    {
-      id: 1,
-      name: "olá",
-    },
-    {
-      id: 2,
-      name: "olá",
-    },
-  ];
-
-  const handleId = (id: number) => {
-    fetchComments(id);
-  };
-  console.log(usersData);
-
   return (
-    <S.Main>
-      <p>Teste Front End</p>
+    <>
+      <S.Main>
+        <Header position={position} />
+        <S.PresentationSection>
+          <S.PresentationTitle>
+            <h2>Se mantenha atualizado</h2>
+          </S.PresentationTitle>
+          <S.PresentationDesc>
+            <p>
+              Descubra histórias, pensamentos e conhecimento de escritores de
+              quaquer lugar do mundo, sobre qualquer assunto.
+            </p>
+          </S.PresentationDesc>
+        </S.PresentationSection>
+        <S.TesteTwo></S.TesteTwo>
+      </S.Main>
+    </>
+  );
+};
+export default Home;
+
+// useEffect(() => {
+//   fetchUsers();
+// }, []);
+
+// console.log(postsData);
+
+// const dataTest = [
+//   {
+//     id: 1,
+//     name: "olá",
+//   },
+//   {
+//     id: 2,
+//     name: "olá",
+//   },
+// ];
+
+// const handleId = (id: number) => {
+//   fetchComments(id);
+// };
+// console.log(usersData);
+
+{
+  /* <p>Teste Front End</p>
 
       {usersData
         ? usersData.map((item, index) => {
@@ -44,8 +86,5 @@ const Home = () => {
               </>
             );
           })
-        : null}
-    </S.Main>
-  );
-};
-export default Home;
+        : null} */
+}

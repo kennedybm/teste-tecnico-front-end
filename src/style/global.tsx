@@ -22,6 +22,10 @@ export default createGlobalStyle`
     --title: 'Montserrat', sans-serif;
     --content: 'Merriweather', serif;
 
+    --fs-xl: clamp(1.5rem, 8vw, 2.2rem);
+    --fs-lrg: 1.8rem;
+    --fs-mid: 1.4rem;
+    --fs-sml: 0.9rem;
 }
 body{
     background-color: var(--default);

@@ -17,7 +17,7 @@ export default createGlobalStyle`
     --gray0: #f3f3f3;
     --gray1: #6f5b61;
     --gray2: #222222;
-    --gray3: #e9e9e9;
+    --gray3: #e9e9e9; //post cards
 
     --title: 'Montserrat', sans-serif;
     --content: 'Merriweather', serif;

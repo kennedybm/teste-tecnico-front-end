@@ -6,7 +6,7 @@ export default createGlobalStyle`
         padding: 0;
         outline:0;
         border: 0;
-        box-sizing:border-box;
+        box-sizing: border-box;
         vertical-align: baseline;
         font-size: 100%;
     }

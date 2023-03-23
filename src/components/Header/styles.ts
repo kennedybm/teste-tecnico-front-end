@@ -29,10 +29,9 @@ export const TitleBox = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 1em;
-  /* border: 1px solid black; */
-  width: 50%;
+  width: 75%;
   h1 {
-    font-size: 6vmin;
+    font-size: var(--fs-xl);
   }
 `;
 
@@ -41,7 +40,7 @@ export const LoginBox = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  width: 50%;
+  width: 25%;
   button {
     margin-right: 1em;
     border-radius: 4px;

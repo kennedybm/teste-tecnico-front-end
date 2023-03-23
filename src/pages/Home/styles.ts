@@ -22,19 +22,16 @@ export const PresentationSection = styled.section`
 export const PresentationTitle = styled.div`
   display: flex;
   align-items: flex-end;
-  border: 1px solid #000;
   height: 40%;
   width: 100%;
   h2 {
-    font-size: var(--fs-lrg);
+    font-size: var(--fs-xl);
     padding: 0px 0 0.1em 0.5em;
   }
 `;
 
 export const PresentationDesc = styled.div`
   display: flex;
-  border: 1px solid #000;
-  /* height: 50%; */
   width: 100%;
   p {
     font-size: var(--fs-sml);

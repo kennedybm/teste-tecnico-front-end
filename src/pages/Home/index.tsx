@@ -2,7 +2,7 @@ import * as S from "./styles";
 import { usePosts } from "../../providers/Api/Posts";
 import { useUsers } from "../../providers/Api/Users";
 import { useEffect, useState, useRef } from "react";
-import { Header } from "../../components";
+import { Header, Presentaion } from "../../components";
 
 const Home = () => {
   const { fetchPosts, fetchComments, postsData, commentsData } = usePosts();
@@ -34,17 +34,7 @@ const Home = () => {
     <>
       <S.Main>
         <Header position={position} />
-        <S.PresentationSection>
-          <S.PresentationTitle>
-            <h2>Se mantenha atualizado</h2>
-          </S.PresentationTitle>
-          <S.PresentationDesc>
-            <p>
-              Descubra histórias, pensamentos e conhecimento de escritores de
-              quaquer lugar do mundo, sobre qualquer assunto.
-            </p>
-          </S.PresentationDesc>
-        </S.PresentationSection>
+        <Presentaion />
         <S.TesteTwo></S.TesteTwo>
       </S.Main>
     </>

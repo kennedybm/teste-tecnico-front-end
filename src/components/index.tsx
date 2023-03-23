@@ -1,4 +1,5 @@
 import { Header } from "./Header";
 import { Presentaion } from "./Presentation";
+import { Posts } from "./Posts";
 
-export { Header, Presentaion };
+export { Header, Presentaion, Posts };

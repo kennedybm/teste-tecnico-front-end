@@ -3,12 +3,23 @@ import styled from "styled-components";
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: var(--gray0);
   width: 85%;
-  max-width: 20em;
-  height: 10.5em;
-  margin-bottom: 1rem;
+  max-width: 25em;
+  height: 12em;
   border-radius: 5px;
+  overflow: hidden;
+  @media (min-width: 700px) {
+    max-width: 30em;
+    width: 47%;
+  }
+
+  @media (min-width: 1300px) {
+    justify-content: space-around;
+    max-width: 25.5em;
+    height: 17em;
+  }
 `;
 
 export const TitleBox = styled.div`
@@ -28,8 +39,14 @@ export const TitleBox = styled.div`
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 0px 0.8rem;
+    margin: 0px 1rem;
   }
+
+  /* @media (min-width: 1300px) {
+    h1 {
+      font-size: var(--fs-xm);
+    }
+  } */
 `;
 
 export const OwnerBox = styled.div`
@@ -43,7 +60,7 @@ export const OwnerBox = styled.div`
     font-size: var(--fs-xs);
     font-weight: 300;
     color: var(--gray2);
-    margin: 0px 0.5rem 0 0.8rem;
+    margin: 0px 0.5rem 0 1rem;
   }
   p {
     display: inline-block;
@@ -52,6 +69,7 @@ export const OwnerBox = styled.div`
     font-size: var(--fs-sml);
     font-weight: 600;
     font-family: var(--title);
+    cursor: pointer;
   }
   p::after {
     content: "";
@@ -76,7 +94,7 @@ export const ContentBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 4em;
+  height: 5em;
   width: 100%;
   p {
     color: var(--gray2);
@@ -84,11 +102,11 @@ export const ContentBox = styled.div`
     font-size: var(--fs-sml);
     font-weight: 300;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 0px 0.8rem;
+    margin: 0px 1rem;
   }
 `;
 
@@ -97,7 +115,7 @@ export const RedirectBox = styled.div`
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 2em;
+  height: 3em;
   span {
     color: var(--gray2);
     font-size: 1.2rem;
@@ -110,6 +128,7 @@ export const RedirectBox = styled.div`
     font-size: var(--fs-sml);
     font-weight: 500;
     font-family: var(--title);
+    cursor: pointer;
   }
   p::after {
     content: "";

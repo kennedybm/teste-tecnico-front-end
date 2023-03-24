@@ -2,6 +2,10 @@ import * as Iterfaces from "./interfaces";
 import * as Styles from "./styles";
 
 export const PostsCard = ({ userId, id, title, body }: Iterfaces.IPosts) => {
+  const foundPostOwner = (value: number) => {
+    console.log(value);
+  };
+
   return (
     <>
       <Styles.Card>
@@ -10,7 +14,7 @@ export const PostsCard = ({ userId, id, title, body }: Iterfaces.IPosts) => {
         </Styles.TitleBox>
         <Styles.OwnerBox>
           <span>by</span>
-          <p>Marcia</p>
+          <p onClick={() => foundPostOwner(userId)}>Marcia</p>
         </Styles.OwnerBox>
         <Styles.ContentBox>
           <p>

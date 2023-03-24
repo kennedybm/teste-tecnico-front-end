@@ -8,5 +8,5 @@ export const PostsSection = styled.section`
   background-color: var(--default);
   border: 1px solid black;
   width: 100%;
-  height: 30em;
+  height: 40em;
 `;

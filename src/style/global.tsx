@@ -16,7 +16,7 @@ export default createGlobalStyle`
 
     --gray0: #f3f3f3;
     --gray1: #6f5b61;
-    --gray2: #222222;
+    --gray2: #222222; //title
     --gray3: #e9e9e9; //post cards
 
     --title: 'Montserrat', sans-serif;
@@ -24,8 +24,10 @@ export default createGlobalStyle`
 
     --fs-xl: clamp(1.5rem, 8vw, 2.2rem);
     --fs-lrg: 1.8rem;
+    --fs-xm: 1.6rem;
     --fs-mid: 1.4rem;
     --fs-sml: 0.9rem;
+    --fs-xs: 0.8rem;
 }
 body{
     background-color: var(--default);

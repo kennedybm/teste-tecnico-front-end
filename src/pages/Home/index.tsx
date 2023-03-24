@@ -2,7 +2,7 @@ import * as S from "./styles";
 import { usePosts } from "../../providers/Api/Posts";
 import { useUsers } from "../../providers/Api/Users";
 import { useEffect, useState, useRef } from "react";
-import { Header, Presentaion } from "../../components";
+import { Header, Presentaion, Posts } from "../../components";
 
 const Home = () => {
   const { fetchPosts, fetchComments, postsData, commentsData } = usePosts();
@@ -12,9 +12,13 @@ const Home = () => {
 
   const [postId, setPostId] = useState<number | undefined>();
 
+  // useEffect(() => {
+  //   fetchPosts();
+  // }, []);
+
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
-    console.log(scrollPosition);
+    // console.log(scrollPosition);
     if (scrollPosition >= 240) {
       setPosition(!position);
     } else if (scrollPosition < 240) {
@@ -35,6 +39,7 @@ const Home = () => {
       <S.Main>
         <Header position={position} />
         <Presentaion />
+        <Posts />
         <S.TesteTwo></S.TesteTwo>
       </S.Main>
     </>

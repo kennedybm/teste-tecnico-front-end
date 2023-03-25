@@ -6,7 +6,7 @@ export const PresentationSection = styled.section`
   justify-content: center;
   align-items: center;
   background-color: var(--decor);
-  height: 15em;
+  height: 17em;
   width: 100%;
 `;
 
@@ -17,7 +17,20 @@ export const PresentationTitle = styled.div`
   width: 100%;
   h2 {
     font-size: var(--fs-xl);
-    padding: 0px 0 0.1em 0.5em;
+    font-family: var(--title);
+    font-weight: 600;
+    margin-left: 0.6em;
+  }
+  @media (min-width: 400px) {
+    h2 {
+      margin-bottom: 0.3em;
+    }
+  }
+  @media (min-width: 600px) {
+    h2 {
+      margin-left: 0.48em;
+      margin-bottom: 0.3em;
+    }
   }
 `;
 
@@ -26,14 +39,21 @@ export const PresentationDesc = styled.div`
   width: 100%;
   p {
     font-size: var(--fs-sml);
-    padding-top: 0.3rem;
-    width: 65%;
+    font-family: var(--title);
+    font-weight: 500;
+    margin-left: 1.3em;
+    width: 77%;
     max-width: 20rem;
-    padding-left: 1em;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  @media (min-width: 600px) {
+    p {
+      font-size: 1rem;
+      max-width: 27rem;
+    }
   }
 `;

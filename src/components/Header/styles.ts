@@ -7,7 +7,7 @@ interface Props {
 
 const handleBackgroundColors = (props: Props) => {
   if (props.position === true) {
-    return `var(--gray1)`;
+    return `var(--default)`;
   } else if (props.position === false || props.disable === false) {
     return `var(--decor)`;
   }
@@ -18,7 +18,7 @@ export const Header = styled.header<Props>`
   background-color: ${(props) => handleBackgroundColors(props)};
   width: 100%;
   height: 3em;
-  border-bottom: 1px solid var(--gray2);
+  border-bottom: 2px solid var(--gray2);
   position: fixed;
   top: 0%;
   z-index: 1;
@@ -32,6 +32,8 @@ export const TitleBox = styled.div`
   width: 75%;
   h1 {
     font-size: var(--fs-xl);
+    font-family: var(--title);
+    font-weight: bold;
   }
 `;
 
@@ -47,5 +49,7 @@ export const LoginBox = styled.div`
     background-color: transparent;
     text-decoration: underline var(--gray1);
     font-size: 0.75rem;
+    font-family: var(--title);
+    font-weight: 400;
   }
 `;

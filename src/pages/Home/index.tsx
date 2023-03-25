@@ -1,4 +1,4 @@
-import * as S from "./styles";
+import * as Styles from "./styles";
 import { usePosts } from "../../providers/Api/Posts";
 import { useUsers } from "../../providers/Api/Users";
 import { useEffect, useState, useRef } from "react";
@@ -19,9 +19,9 @@ const Home = () => {
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     // console.log(scrollPosition);
-    if (scrollPosition >= 240) {
+    if (scrollPosition >= 218) {
       setPosition(!position);
-    } else if (scrollPosition < 240) {
+    } else if (scrollPosition < 218) {
       setPosition(false);
     }
   };
@@ -36,12 +36,11 @@ const Home = () => {
 
   return (
     <>
-      <S.Main>
+      <Styles.Main>
         <Header position={position} />
         <Presentaion />
         <Posts />
-        <S.TesteTwo></S.TesteTwo>
-      </S.Main>
+      </Styles.Main>
     </>
   );
 };

@@ -1,17 +1,17 @@
-import * as S from "./styles";
+import * as Styles from "./styles";
 import * as Interfaces from "./interfaces";
 
 export const Header = ({ position, disable }: Interfaces.IHeaderProps) => {
   return (
     <>
-      <S.Header position={position} disable={disable}>
-        <S.TitleBox>
+      <Styles.Header position={position} disable={disable}>
+        <Styles.TitleBox>
           <h1>Be Curious</h1>
-        </S.TitleBox>
-        <S.LoginBox>
+        </Styles.TitleBox>
+        <Styles.LoginBox>
           <button>Sign in</button>
-        </S.LoginBox>
-      </S.Header>
+        </Styles.LoginBox>
+      </Styles.Header>
     </>
   );
 };

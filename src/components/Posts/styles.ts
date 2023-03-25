@@ -6,7 +6,7 @@ export const MainSection = styled.section`
   justify-content: center;
   flex-direction: column;
   background-color: var(--default);
-  border: 1px solid blue;
+  border-top: 1px solid var(--gray2);
   width: 100%;
 `;
 
@@ -16,7 +16,6 @@ export const PostsSection = styled.section`
   align-items: center;
   justify-content: space-evenly;
   background-color: var(--default);
-  border: 1px solid black;
   width: 100%;
   height: 87em;
 
@@ -30,7 +29,7 @@ export const PostsSection = styled.section`
   @media (min-width: 1300px) {
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 41em;
+    height: 33em;
     max-width: 1300px;
   }
 `;
@@ -41,8 +40,7 @@ export const PaginationBox = styled.div`
   align-items: flex-start;
   width: 100%;
   max-width: 400px;
-  height: 2em;
-  border: 1px solid black;
+  height: 3em;
   .paginationUl {
     display: flex;
     flex-direction: row;

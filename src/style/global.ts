@@ -24,18 +24,27 @@ export default createGlobalStyle`
 
     --fs-tt: clamp(1rem, 7vw, 2.3rem);
     --fs-xl: clamp(1.9rem, 6vw, 2.5rem);
-    --fs-lrg: 1.8rem;
     --fs-xm: 1.9rem;
+    --fs-lrg: 1.8rem;
     --fs-mid: 1.2rem;
     --fs-sml: 0.9rem;
     --fs-xs: 0.8rem;
 
     @media (min-width: 1300px) {
-    /* h1{
-        font-size: var(--fs-xm);
-    } */
     p{
         font-size: var(--fs-mid);
+    }
+    h2{
+        font-size: var(--fs-xm);
+    }
+   }
+
+   @media (min-width: 768px) {
+    /* p{
+        font-size: var(--fs-mid);
+    } */
+    h2{
+        font-size: var(--fs-lrg);
     }
    }
 }

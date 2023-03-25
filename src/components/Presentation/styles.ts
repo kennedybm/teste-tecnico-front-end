@@ -42,7 +42,7 @@ export const PresentationDesc = styled.div`
     width: 77%;
     max-width: 20rem;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -50,7 +50,6 @@ export const PresentationDesc = styled.div`
   @media (min-width: 1300px) {
     p {
       font-size: 1.3rem;
-      -webkit-line-clamp: 5;
       max-width: 30rem;
     }
   }

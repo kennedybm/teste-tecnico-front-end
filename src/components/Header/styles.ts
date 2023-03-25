@@ -17,7 +17,7 @@ export const Header = styled.header<Props>`
   display: flex;
   background-color: ${(props) => handleBackgroundColors(props)};
   width: 100%;
-  height: 3.5em;
+  height: 4.1em;
   border-bottom: 2px solid var(--gray2);
   position: fixed;
   top: 0%;

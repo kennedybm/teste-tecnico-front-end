@@ -18,7 +18,7 @@ export const Card = styled.div`
   @media (min-width: 1300px) {
     justify-content: space-around;
     max-width: 25.5em;
-    height: 17em;
+    height: 13em;
   }
 `;
 
@@ -47,47 +47,6 @@ export const TitleBox = styled.div`
       font-size: var(--fs-xm);
     }
   } */
-`;
-
-export const OwnerBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  height: 1.5em;
-  span {
-    font-family: var(--title);
-    font-size: var(--fs-xs);
-    font-weight: 300;
-    color: var(--gray2);
-    margin: 0px 0.5rem 0 1rem;
-  }
-  p {
-    display: inline-block;
-    position: relative;
-    color: var(--gray2);
-    font-size: var(--fs-sml);
-    font-weight: 600;
-    font-family: var(--title);
-    cursor: pointer;
-  }
-  p::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 5%;
-    left: 0;
-    background-color: var(--gray2);
-    transform-origin: bottom left;
-    transition: transform 0.25s ease-out;
-    text-decoration: none;
-  }
-  p:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
 `;
 
 export const ContentBox = styled.div`
@@ -148,3 +107,44 @@ export const RedirectBox = styled.div`
     transform-origin: bottom left;
   }
 `;
+
+// export const OwnerBox = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   width: 100%;
+//   height: 1.5em;
+//   span {
+//     font-family: var(--title);
+//     font-size: var(--fs-xs);
+//     font-weight: 300;
+//     color: var(--gray2);
+//     margin: 0px 0.5rem 0 1rem;
+//   }
+//   p {
+//     display: inline-block;
+//     position: relative;
+//     color: var(--gray2);
+//     font-size: var(--fs-sml);
+//     font-weight: 600;
+//     font-family: var(--title);
+//     cursor: pointer;
+//   }
+//   p::after {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     transform: scaleX(0);
+//     height: 2px;
+//     bottom: 5%;
+//     left: 0;
+//     background-color: var(--gray2);
+//     transform-origin: bottom left;
+//     transition: transform 0.25s ease-out;
+//     text-decoration: none;
+//   }
+//   p:hover::after {
+//     transform: scaleX(1);
+//     transform-origin: bottom left;
+//   }
+// `;

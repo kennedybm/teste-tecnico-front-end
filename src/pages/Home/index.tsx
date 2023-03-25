@@ -19,9 +19,9 @@ const Home = () => {
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     // console.log(scrollPosition);
-    if (scrollPosition >= 218) {
+    if (scrollPosition >= 206) {
       setPosition(!position);
-    } else if (scrollPosition < 218) {
+    } else if (scrollPosition < 206) {
       setPosition(false);
     }
   };

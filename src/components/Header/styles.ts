@@ -24,16 +24,31 @@ export const Header = styled.header<Props>`
   z-index: 1;
 `;
 
+export const HeaderContent = styled.section`
+  display: flex;
+  width: 100%;
+  margin-left: 1em;
+  border: 1px solid black;
+  @media (min-width: 1300px) {
+    margin-left: 1em;
+  }
+`;
+
 export const TitleBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1em;
-  width: 75%;
+  width: 50%;
   h1 {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-tt);
     font-family: var(--title);
     font-weight: bold;
+    padding-left: 0.8em;
+  }
+  @media (min-width: 425px) {
+    h1 {
+      padding-left: 0.5em;
+    }
   }
 `;
 
@@ -42,14 +57,14 @@ export const LoginBox = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  width: 25%;
+  width: 50%;
   button {
-    margin-right: 1em;
+    margin-right: 1.9em;
     border-radius: 4px;
     background-color: transparent;
     text-decoration: underline var(--gray1);
-    font-size: 0.75rem;
+    font-size: var(--fs-sml);
     font-family: var(--title);
-    font-weight: 400;
+    font-weight: 300;
   }
 `;

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
 export interface IHeaderProps extends React.HTMLAttributes<HTMLHeadElement> {
-  position: boolean;
+  position?: boolean;
   disable?: boolean;
 }

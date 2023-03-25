@@ -1,21 +1,14 @@
 import * as Iterfaces from "./interfaces";
 import * as Styles from "./styles";
+import { postsData, usersData } from "../../../service/mock";
 
 export const PostsCard = ({ userId, id, title, body }: Iterfaces.IPosts) => {
-  const foundPostOwner = (value: number) => {
-    console.log(value);
-  };
-
   return (
     <>
       <Styles.Card>
         <Styles.TitleBox>
           <h1>{title}</h1>
         </Styles.TitleBox>
-        <Styles.OwnerBox>
-          <span>by</span>
-          <p onClick={() => foundPostOwner(userId)}>Marcia</p>
-        </Styles.OwnerBox>
         <Styles.ContentBox>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -24,7 +17,7 @@ export const PostsCard = ({ userId, id, title, body }: Iterfaces.IPosts) => {
         </Styles.ContentBox>
         <Styles.RedirectBox>
           <span>&#8594;</span>
-          <p>Read Article</p>
+          <p>Ler Artigo</p>
         </Styles.RedirectBox>
       </Styles.Card>
     </>

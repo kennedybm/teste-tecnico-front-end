@@ -22,6 +22,7 @@ export default createGlobalStyle`
     --title: 'Montserrat', sans-serif;
     --content: 'Merriweather', serif;
 
+    --fs-tt: clamp(1rem, 7vw, 2.3rem);
     --fs-xl: clamp(1.9rem, 6vw, 2.5rem);
     --fs-lrg: 1.8rem;
     --fs-xm: 1.9rem;
@@ -30,9 +31,9 @@ export default createGlobalStyle`
     --fs-xs: 0.8rem;
 
     @media (min-width: 1300px) {
-    h1{
+    /* h1{
         font-size: var(--fs-xm);
-    }
+    } */
     p{
         font-size: var(--fs-mid);
     }

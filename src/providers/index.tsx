@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { PostsProvider } from "./Api/Posts";
 import { UsersProvider } from "./Api/Users";
+import { ModalProvider } from "./Modal";
 
 export interface IProvidersDefault {
   children: ReactNode;
@@ -9,7 +10,9 @@ export interface IProvidersDefault {
 const Providers = ({ children }: IProvidersDefault) => {
   return (
     <PostsProvider>
-      <UsersProvider>{children}</UsersProvider>
+      <UsersProvider>
+        <ModalProvider>{children}</ModalProvider>
+      </UsersProvider>
     </PostsProvider>
   );
 };

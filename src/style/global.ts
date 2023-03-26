@@ -16,8 +16,8 @@ export default createGlobalStyle`
 
     --gray0: #f3f3f3;
     --gray1: #6f5b61;
-    --gray2: #222222; //title
-    --gray3: #e9e9e9; //post cards
+    --gray2: #222222;
+    --gray3: #e9e9e9;
 
     --title: 'Montserrat', sans-serif;
     --content: 'Merriweather', serif;
@@ -40,9 +40,6 @@ export default createGlobalStyle`
    }
 
    @media (min-width: 768px) {
-    /* p{
-        font-size: var(--fs-mid);
-    } */
     h2{
         font-size: var(--fs-lrg);
     }
@@ -50,6 +47,13 @@ export default createGlobalStyle`
 }
 body{
     background-color: var(--default);
+    &::-webkit-scrollbar {
+    width: 0.3em;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--gray3);
+    border-radius: 3px;
+  }
 }
 a{
     text-decoration: none;

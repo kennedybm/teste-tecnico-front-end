@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
   background-color: var(--default);
   header {
     position: unset;
@@ -12,71 +14,30 @@ export const Main = styled.main`
 export const ContentSection = styled.section`
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-`;
-
-//User
-export const TestOne = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  height: 5.5em;
-  border: 1px solid blue;
-  z-index: 2;
-`;
-
-export const UserBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  border: 1px solid yellow;
-  height: 5.8em;
-`;
-
-export const ImgBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid yellow;
-  width: 25%;
-  max-width: 7em;
-  img {
-    width: 60%;
-    max-width: 3em;
+  border-left: 1px solid var(--gray1);
+  border-right: 1px solid var(--gray1);
+  border-bottom: 1px solid var(--gray1);
+  max-width: 1300px;
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 `;
 
-export const InfosBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid yellow;
-  padding-left: 0.5em;
-  width: 75%;
-  h3 {
-    font-family: var(--title);
-    font-size: var(--fs-xs);
-    font-weight: 400;
-  }
-`;
-//--------------------------------
-
-//Posts
-export const TestTwo = styled.div`
+export const PostsSection = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 22.5em;
-  border: 1px solid yellow;
+  height: 29em;
+  border-right: 1px solid var(--gray1);
   overflow: auto;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   z-index: 3;
   &::-webkit-scrollbar {
     display: none;
+  }
+  @media (min-width: 768px) {
+    height: 87vh;
   }
 `;
 
@@ -99,6 +60,11 @@ export const TitleBox = styled.div`
     margin: 0px 1rem;
     padding-top: 1.2em;
   }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: var(--fs-lrg);
+    }
+  }
 `;
 
 export const ContentBox = styled.div`
@@ -118,5 +84,28 @@ export const ContentBox = styled.div`
     text-overflow: ellipsis;
     margin: 0px 1rem;
     padding-bottom: 1.5em;
+  }
+  @media (min-width: 1024px) {
+    p {
+      font-size: var(--fs-mid);
+    }
+  }
+`;
+
+export const ToggleModalBox = styled.div`
+  position: fixed;
+  top: 13%;
+  right: 1%;
+  background-color: var(--default);
+  z-index: 3;
+  border-radius: 5px;
+  button {
+    color: var(--decor);
+    font-size: 1.1rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+    display: none;
   }
 `;

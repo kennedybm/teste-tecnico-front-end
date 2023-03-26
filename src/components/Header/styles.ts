@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface Props {
-  position: boolean;
+  position?: boolean;
   disable?: boolean;
 }
 
@@ -40,6 +40,7 @@ export const TitleBox = styled.div`
   align-items: center;
   width: 50%;
   h1 {
+    cursor: pointer;
     font-size: var(--fs-tt);
     font-family: var(--title);
     font-weight: bold;

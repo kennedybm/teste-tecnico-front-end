@@ -3,10 +3,9 @@ import { PostsCard } from "./PostsCard";
 import { usePosts } from "../../providers/Api/Posts";
 import * as Styles from "./styles";
 import { Pagination } from "../Pagination";
-import { postsData, usersData } from "../../service/mock";
 
 export const Posts = () => {
-  // const { postsData } = usePosts();
+  const { postsData } = usePosts();
 
   const [pageNumber, setPageNumber] = useState(0);
 

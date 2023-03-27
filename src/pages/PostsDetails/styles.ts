@@ -17,9 +17,12 @@ export const ContentSection = styled.section`
   border-left: 1px solid var(--gray1);
   border-right: 1px solid var(--gray1);
   max-width: 1300px;
-  height: 100vh;
+  height: 87vh;
   @media (min-width: 768px) {
     flex-direction: row;
+  }
+  @media (min-width: 1024px) {
+    height: 89.4vh;
   }
 `;
 
@@ -27,7 +30,7 @@ export const PostsSection = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 29.5em;
+  height: 30em;
   overflow: auto;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -36,7 +39,7 @@ export const PostsSection = styled.section`
     display: none;
   }
   @media (min-width: 768px) {
-    height: 87vh;
+    height: 29em;
   }
 `;
 

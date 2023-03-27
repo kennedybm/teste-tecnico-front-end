@@ -7,7 +7,6 @@ export const CommentsMain = styled.section`
   justify-content: flex-end;
   width: 99%;
   max-width: 500px;
-  height: 26em;
   justify-content: normal;
   border-radius: 4px;
   background-color: var(--default);

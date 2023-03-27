@@ -41,12 +41,6 @@ export const TitleBox = styled.div`
     text-overflow: ellipsis;
     margin: 0px 1rem;
   }
-
-  /* @media (min-width: 1300px) {
-    h1 {
-      font-size: var(--fs-xm);
-    }
-  } */
 `;
 
 export const ContentBox = styled.div`

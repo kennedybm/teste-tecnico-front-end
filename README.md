@@ -19,19 +19,19 @@ Make sure to have installed on your machine
 #### Instructions:
 1. Clone this repo: 
 
-`git@github.com:kennedybm/teste-tecnico-front-end.git`
+  `git@github.com:kennedybm/teste-tecnico-front-end.git`
 
 2. Install dependencies: 
 
-`yarn install`
+  `yarn install`
 
 3. Run locally: 
 
-`yarn dev`
+  `yarn dev`
 
 4. Acess on: 
 
-`http://localhost:5173/`
+  `http://localhost:5173/`
 
 ## License
 

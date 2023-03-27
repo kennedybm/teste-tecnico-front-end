@@ -16,10 +16,7 @@ export const PostsCard = ({ userId, id, title, body }: Iterfaces.IPosts) => {
           <h1>{title}</h1>
         </Styles.TitleBox>
         <Styles.ContentBox>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            dolorem provident harum quisquam nobis vel eveniet necessitatibus
-          </p>
+          <p>{body}</p>
         </Styles.ContentBox>
         <Styles.RedirectBox>
           <span>&#8594;</span>

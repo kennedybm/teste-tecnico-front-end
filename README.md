@@ -12,7 +12,7 @@ Developed using the following technologies
 - [TypeScript](https://www.typescriptlang.org/)
 - [Node.JS](https://nodejs.org/en)
 
-## 📋 Instalation guide
+## 📋 Installation guide
 
 #### Requirements:
 

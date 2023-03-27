@@ -16,7 +16,7 @@ Developed using the following technologies
 
 #### Requirements:
 
-Make sure to have installed in your machine
+Make sure to have installed on your machine
 
 - [Node.JS](https://nodejs.org/en)
 - [Yarn](https://yarnpkg.com/)

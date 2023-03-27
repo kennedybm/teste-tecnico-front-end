@@ -9,7 +9,7 @@ export const ModalSection = styled.section`
   flex-direction: column;
   align-items: center;
   position: fixed;
-  top: 21.5%;
+  bottom: 0%;
   width: fit-content;
   z-index: 4;
   animation: ${openAnimation} 0.8s linear;

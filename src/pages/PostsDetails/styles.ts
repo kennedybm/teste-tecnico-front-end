@@ -16,8 +16,8 @@ export const ContentSection = styled.section`
   flex-direction: column;
   border-left: 1px solid var(--gray1);
   border-right: 1px solid var(--gray1);
-  border-bottom: 1px solid var(--gray1);
   max-width: 1300px;
+  height: 100vh;
   @media (min-width: 768px) {
     flex-direction: row;
   }
@@ -28,7 +28,6 @@ export const PostsSection = styled.section`
   flex-direction: column;
   width: 100%;
   height: 29.5em;
-  border-right: 1px solid var(--gray1);
   overflow: auto;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;

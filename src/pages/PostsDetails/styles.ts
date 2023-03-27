@@ -27,7 +27,7 @@ export const PostsSection = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 29em;
+  height: 29.5em;
   border-right: 1px solid var(--gray1);
   overflow: auto;
   scroll-snap-type: y mandatory;
@@ -102,6 +102,7 @@ export const ToggleModalBox = styled.div`
   button {
     color: var(--decor);
     font-size: 1.1rem;
+    padding-right: 0.2em;
     background-color: transparent;
     cursor: pointer;
   }

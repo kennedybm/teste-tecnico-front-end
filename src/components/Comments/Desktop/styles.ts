@@ -10,6 +10,7 @@ export const CommentMain = styled.section`
     width: 40%;
     background-color: var(--default);
     padding: 0.3em;
+    border-left: 1px solid var(--gray1);
   }
 `;
 

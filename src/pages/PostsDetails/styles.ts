@@ -17,12 +17,9 @@ export const ContentSection = styled.section`
   border-left: 1px solid var(--gray1);
   border-right: 1px solid var(--gray1);
   max-width: 1300px;
-  height: 87vh;
+  height: 100vh;
   @media (min-width: 768px) {
     flex-direction: row;
-  }
-  @media (min-width: 1024px) {
-    height: 89.4vh;
   }
 `;
 

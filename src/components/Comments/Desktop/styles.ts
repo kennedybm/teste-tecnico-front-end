@@ -6,7 +6,6 @@ export const CommentMain = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     width: 40%;
     background-color: var(--default);
     padding: 0.3em;

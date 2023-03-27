@@ -17,16 +17,16 @@ Make sure to have installed on your machine
 - [Yarn](https://yarnpkg.com/)
 
 #### Instructions:
-1. Clone this repo: 
+**1. Clone this repo:** 
 `git@github.com:kennedybm/teste-tecnico-front-end.git`
 
-2. Install dependencies: 
+**2. Install dependencies:** 
 `yarn install`
 
-3. Run locally: 
+**3. Run locally:**
 `yarn dev`
 
-4. Acess on: 
+**4. Access on:** 
 `http://localhost:5173/`
 
 ## License
